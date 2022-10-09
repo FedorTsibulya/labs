@@ -131,7 +131,7 @@ class FactorizeTroll(Troll):
 
     def question(self):
         x = randint(1, 50)
-        self.__quest = 'Перечислите через запятую множители числа', str(x)
+        self.__quest = 'Перечислите через пробел множители числа', str(x)
         self.set_answer(factorize(x))
         return self.__quest
 
